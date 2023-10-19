@@ -13,10 +13,7 @@ public class death : MonoBehaviour
         }
     }
     void die()
-    {
-        GetComponent<MeshRenderer>().enabled = false;
-        GetComponent<Rigidbody>().isKinematic = true;
-        GetComponent<Pmove>().enabled = false;
+    { 
         ReloadLevel();
 
 
