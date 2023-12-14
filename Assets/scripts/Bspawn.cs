@@ -5,7 +5,6 @@ using UnityEngine;
 public class Bspawn : MonoBehaviour
 {
     public GameObject Espawner;
-    public bool stop = false;
     public float sTime;
     public float sDelay;
 
@@ -18,8 +17,9 @@ public class Bspawn : MonoBehaviour
     // Update is called once per frame
     void spawn()
     {
-       
+       //when the items spawn they will be randomly placed in the coordinates below
         Vector3 RandomSpawnPosition = new Vector3(Random.Range(-20, 11), 10, Random.Range(10, 15));
+       //creates the items
         Instantiate(Espawner, RandomSpawnPosition, Quaternion.identity);
     }
 }

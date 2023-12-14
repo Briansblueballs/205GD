@@ -16,7 +16,7 @@ public class pred : MonoBehaviour
 
     // Update is called once per frame
     void FixedUpdate()
-    {
+    {//makes it so the enemy can follow our player
         rb.AddForce(Vector3.Normalize(player.position - transform.position) * forceMultiplier);  
     }
 }

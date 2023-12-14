@@ -18,7 +18,7 @@ public class Pmove : MonoBehaviour
 
     // Update is called once per frame
     void FixedUpdate()
-    {
+    {//makes it so the rigidbody to move
         if (Input.GetKey(KeyCode.W))
         {
             rb.AddForce(transform.forward * forceMultiplier);

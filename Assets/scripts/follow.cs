@@ -13,7 +13,7 @@ public class follow : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
+    {//makes it so that the game object moves towards the targert
         transform.position =
              Vector3.MoveTowards(this.transform.position, targetobj.position, 10 * Time.deltaTime);
     }
